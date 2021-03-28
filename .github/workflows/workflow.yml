@@ -33,7 +33,7 @@ jobs:
         ls
     - name: Uploading files to S3
       run: |
-          aws s3 sync . s3://yatidole.com --acl public-read
+          aws s3 sync . ${{ secrets.S3_BUCKET }} --acl public-read
      # Runs a set of commands using the runners shell
     - name: Getting modified files
       uses: YatiDole/get-changed-files@v1 
@@ -47,6 +47,6 @@ jobs:
           for file in "${modified_files[@]}"; do
           if [ "${file}" != ".github/workflows/frontend.yml" ]; then
             echo "Uploading file: ${file}."
-            aws cloudfront create-invalidation --distribution-id E1NA5LGDIXSGA0 --paths "/$file"
+            aws cloudfront create-invalidation --distribution-id ${{ secrets.CF_DISTRO_ID }} --paths "/$file"
           fi
           done
