@@ -24,6 +24,6 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
     - name: Uploading files to S3 
-      run: aws s3 sync . s3://${{ secrets.S3_BUCKET }} --acl public-read --folllow-symlinks --delete --exclude '.git*/*'
+      run: aws s3 sync . / ${{ secrets.S3_BUCKET }} --delete --exclude '.git*/*'
     - name: Invalidate Cloudfront cache
       run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CF_DISTRO_ID }} --paths "/*"
