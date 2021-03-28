@@ -19,7 +19,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Configure AWS credentials and snnc s3
-    - uses: jakejarvis/s3-sync-action@master
+      uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --follow-symlinks --delete --exclude '.git*/*'
       env:
