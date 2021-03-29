@@ -291,8 +291,8 @@ ul {
 
 .column {
     float: left;
-    width: 33.33%;
-    padding: 0px;
+    width: 50%;
+    padding: 10px;
 }
 /* Clearfix (clear floats) */
 
