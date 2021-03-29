@@ -1,17 +1,17 @@
-## Resume-website
+# Resume-website
 Front end repository for AWS implementation of resume website
 
-# index.html
+<b> index.html </b>
 * Contains HTML file which is hosted as a static website.
 <br>
 
-# style.css
+<b> style.css </b>
 * Used for formatting layout of the page.
 <br>
 
-# Images
+<b> Images </b>
 * Contains images required for webpage.
 <br>
 
-# main.yml
+<b> main.yml </b>
 * Github Actions workflow for CI/CD to frontend.
