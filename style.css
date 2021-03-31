@@ -496,6 +496,9 @@ a.Navbar-btn:hover {
         content: "(206) 960-0961";
         padding-left: 1.6rem
     }
+    .visits {
+        text-align: center;
+    }
 }
 
 @page {
