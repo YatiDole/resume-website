@@ -55,3 +55,5 @@ Front end repository for AWS implementation of resume website
 ![cicd-frontend](https://user-images.githubusercontent.com/57376468/113255921-0ad9f680-928e-11eb-9d46-314ece4ca717.PNG)
 
 ## Final Page looks like this.
+
+![resume](https://user-images.githubusercontent.com/57376468/113255934-10cfd780-928e-11eb-8712-82b1a5ed8604.PNG)
